@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <form class="form">
+        <div>
+          <label for="">Select a Country</label>
+          <select name="select" id="country">
+            <option value="India">India</option>
+            <option value="Srilanka">Srilanka</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+          </select>
+        </div>
+
+        <div>
+          <label for=""> Add City </label>
+          <input
+            type="text"
+            name="city"
+            id="city"
+            placeholder="Enter city name..."
+          />
+        </div>
+        <div>
+          <label for="">Add Population</label>
+          <input
+            id="population"
+            type="number"
+            name="population"
+            placeholder="Enter population..."
+          />
+        </div>
+        <button id="submit_btn" type="submit">SUBMIT</button>
+      </form>
+      <br />
+      <div id="filters">
+        <select name="selectBypulutaion" id="populationSort">
+          <option value="">Sort By Population</option>
+          <option value="htl">High to Low</option>
+          <option value="lth">Low to Low</option>
+        </select>
+
+        <select name="select" id="filterCountry">
+          <option value="">Filter By Country</option>
+          <option value="India">India</option>
+          <option value="Srilanka">Srilanka</option>
+          <option value="Pakistan">Pakistan</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+        </select>
+      </div>
+
+      <br />
+      <table id="table">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Country</th>
+            <th>City</th>
+            <th>Population</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <!-- DOM Elements -->
+        </tbody>
+      </table>
+
+      
+  
+  </body>
+</html>
+<script src="index.js"></script>
